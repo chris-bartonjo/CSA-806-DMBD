@@ -1,0 +1,115 @@
+{
+  "n_subcounties": 333,
+  "features": [
+    "log_density",
+    "household_size",
+    "under15_pct",
+    "electricity_pct",
+    "piped_water_pct",
+    "firewood_pct",
+    "internet_pct",
+    "mobile_phone_pct"
+  ],
+  "k": 3,
+  "eps": 1.4,
+  "min_samples": 12,
+  "k_selection": [
+    {
+      "k": 2,
+      "inertia": 1312.0207,
+      "silhouette": 0.4659,
+      "davies_bouldin": 0.869
+    },
+    {
+      "k": 3,
+      "inertia": 909.945,
+      "silhouette": 0.3838,
+      "davies_bouldin": 0.9255
+    },
+    {
+      "k": 4,
+      "inertia": 667.4381,
+      "silhouette": 0.3858,
+      "davies_bouldin": 0.9157
+    },
+    {
+      "k": 5,
+      "inertia": 585.2312,
+      "silhouette": 0.2917,
+      "davies_bouldin": 1.133
+    },
+    {
+      "k": 6,
+      "inertia": 531.4952,
+      "silhouette": 0.2984,
+      "davies_bouldin": 1.1763
+    },
+    {
+      "k": 7,
+      "inertia": 482.9672,
+      "silhouette": 0.2643,
+      "davies_bouldin": 1.2053
+    },
+    {
+      "k": 8,
+      "inertia": 454.0198,
+      "silhouette": 0.2701,
+      "davies_bouldin": 1.23
+    }
+  ],
+  "metrics": [
+    {
+      "model": "K-Means (k=3)",
+      "clusters": 3.0,
+      "noise_pct": 0.0,
+      "silhouette": 0.3838,
+      "davies_bouldin": 0.9255,
+      "calinski_harabasz": 318.0621,
+      "silhouette_noise_as_group": 0.3838,
+      "runtime_ms": 7.7589,
+      "stability_ari": 0.9794
+    },
+    {
+      "model": "K-Means (k=2)",
+      "clusters": 2.0,
+      "noise_pct": 0.0,
+      "silhouette": 0.4659,
+      "davies_bouldin": 0.869,
+      "calinski_harabasz": 341.0808,
+      "silhouette_noise_as_group": 0.4659,
+      "runtime_ms": 6.5446,
+      "stability_ari": 0.992
+    },
+    {
+      "model": "DBSCAN (eps=1.4, ms=12)",
+      "clusters": 2.0,
+      "noise_pct": 7.8078,
+      "silhouette": 0.5183,
+      "davies_bouldin": 0.516,
+      "calinski_harabasz": 122.6465,
+      "silhouette_noise_as_group": 0.3637,
+      "runtime_ms": 0.8166,
+      "stability_ari": 0.9323
+    }
+  ],
+  "ari_kmeans_dbscan": 0.1511,
+  "kmeans_sizes": {
+    "0": 84,
+    "1": 74,
+    "2": 175
+  },
+  "dbscan_sizes": {
+    "-1": 26,
+    "0": 289,
+    "1": 18
+  },
+  "kmeans_labels": {
+    "1": "Remote and underserved",
+    "2": "Rural farming",
+    "0": "Urban and peri-urban"
+  },
+  "pca_variance_pct": [
+    74.71,
+    8.3
+  ]
+}

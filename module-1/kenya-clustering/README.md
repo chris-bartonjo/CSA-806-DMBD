@@ -17,23 +17,23 @@ Eight indicators are built for each sub-county:
 - share of people using the internet;
 - share of people owning a mobile phone.
 
-Eleven forest and national park units with fewer than 1,000 households are removed.
+Twelve units are removed: eleven forests and national parks with fewer than 1,000 households, and Mau Forest, which has no household count.
 
 ## Results
 
-| | K-Means (k = 3) | DBSCAN (eps = 1.4, min_samples = 12) |
+| | K-Means (k = 4) | DBSCAN (eps = 1.4, min_samples = 12) |
 |---|---|---|
-| Clusters | 3 (84, 175, 74) | 2 (289, 18) + 26 noise |
-| Silhouette | 0.384 | 0.518 on clustered points, 0.364 with noise as a group |
-| Davies–Bouldin | 0.925 | 0.516 on clustered points |
-| Calinski–Harabasz | 318 | 123 |
-| Stability (mean ARI, 50 × 90% subsamples) | 0.979 | 0.932 |
-| Runtime (median of 50 fits) | about 8 ms (20 restarts) | under 1 ms |
+| Clusters | 4 (32, 67, 162, 72) | 2 (289, 18) + 26 noise |
+| Silhouette | 0.386 | 0.518 on clustered points, 0.364 with noise as a group |
+| Davies–Bouldin | 0.916 | 0.516 on clustered points |
+| Calinski–Harabasz | 328 | 123 |
+| Stability (mean ARI, 50 × 90% subsamples) | 0.966 | 0.932 |
 
-The two results agree poorly (ARI 0.15):
-
-- **K-Means** splits Kenya into urban and peri-urban, rural farming, and remote and underserved sub-counties. The remote group is mostly in the arid north and north-east.
-- **DBSCAN** sees one connected spread. It separates a dense cluster of Nairobi, Kiambu, Nakuru and Kisumu suburbs, and flags unusual places as noise, such as all six Mombasa sub-counties, Westlands and Mathare.
+- **Choosing k:** k = 2 has the highest silhouette (0.466) but only splits town from countryside. The elbow is at k = 4, which also scores slightly better than k = 3.
+- **Runtime:** K-Means takes longer because it is restarted 20 times. Exact times depend on the machine.
+- **Agreement:** the two results agree poorly (ARI 0.20).
+- **K-Means** gives urban, semi-urban, rural, and remote and underserved sub-counties. The remote group is mostly in the arid north and north-east.
+- **DBSCAN** sees one connected spread. It separates a dense cluster of suburbs in Nairobi, Kiambu, Nakuru, Kajiado and Kisumu, and flags unusual places as noise, such as all six Mombasa sub-counties, Westlands and Mathare.
 
 ![Clusters on the first two principal components](figures/clusters_pca.png)
 

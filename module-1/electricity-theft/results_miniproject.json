@@ -5,6 +5,8 @@
     "thieves": 3615,
     "theft_pct": 8.531577456811101,
     "duplicate_ids": 0,
+    "repeated_rows": 878,
+    "repeated_with_readings": 2,
     "missing_pct": 25.711765722601427,
     "negative": 0,
     "zero_pct": 13.199407958313552,
@@ -15,132 +17,165 @@
   "leak": {
     "all_auc": 0.8505953397029679,
     "all_ap": 0.49501306751749646,
-    "kept_auc": 0.8858859514185558,
-    "kept_ap": 0.5134207135804916
+    "kept_auc": 0.8743959306641343,
+    "kept_ap": 0.4799383461894883
   },
   "clean": {
-    "kept_customers": 20142,
-    "kept_thieves": 1366,
-    "kept_theft_pct": 6.781848873001688,
+    "kept_customers": 18574,
+    "kept_thieves": 1222,
+    "kept_theft_pct": 6.579089049208571,
     "dropped_missing": 21409,
-    "dropped_zero": 821,
-    "capped_pct": 1.2119121313581946,
-    "interpolated_pct": 2.285967696984262
+    "dropped_ends": 1304,
+    "dropped_zero": 1085,
+    "dropped_repeated": 0,
+    "interpolated_pct": 2.028122007335588,
+    "max_before": 514991.78,
+    "max_mean3sd": 50909.65119507863,
+    "max_p99": 7360.186765714277,
+    "p99_changed_pct": 0.9973232011594793
   },
   "pca": {
-    "n90": 110,
+    "n90": 84,
     "n_used": 20,
-    "var_used_pct": 39.38618389848978,
+    "var_used_pct": 57.84888517825401,
     "n_inputs": 147
   },
   "class_medians": {
     "normal": {
-      "mean_kwh": 5.5657,
-      "median_kwh": 4.83,
-      "p10_kwh": 1.84,
-      "p90_kwh": 9.83,
-      "max_kwh": 16.0279,
-      "std_kwh": 3.0608,
-      "cv": 0.5743,
-      "zero_share": 0.0126,
-      "trend": 0.0444,
-      "last3_vs_first3": 1.1777,
+      "mean_kwh": 5.7455,
+      "median_kwh": 5.0,
+      "p10_kwh": 2.01,
+      "p90_kwh": 10.112,
+      "max_kwh": 16.6299,
+      "std_kwh": 3.1375,
+      "cv": 0.5618,
+      "zero_share": 0.0097,
+      "trend": 0.0446,
+      "last3_vs_first3": 1.1808,
       "sudden_drops": 3.0,
-      "weekend_ratio": 1.0148
+      "weekend_ratio": 1.0153
     },
     "theft": {
-      "mean_kwh": 8.1119,
-      "median_kwh": 6.5225,
-      "p10_kwh": 1.828,
-      "p90_kwh": 15.811,
-      "max_kwh": 26.9352,
-      "std_kwh": 5.7313,
-      "cv": 0.7037,
-      "zero_share": 0.0164,
-      "trend": 0.2039,
-      "last3_vs_first3": 1.9404,
+      "mean_kwh": 8.5351,
+      "median_kwh": 6.815,
+      "p10_kwh": 2.112,
+      "p90_kwh": 16.372,
+      "max_kwh": 29.9629,
+      "std_kwh": 6.138,
+      "cv": 0.7017,
+      "zero_share": 0.0087,
+      "trend": 0.1982,
+      "last3_vs_first3": 1.8416,
       "sudden_drops": 4.0,
-      "weekend_ratio": 1.0197
+      "weekend_ratio": 1.0209
     }
   },
   "cv_comparison": {
     "Baseline (random)": {
-      "roc_auc": 0.497,
-      "pr_auc": 0.0676,
-      "prec_top1": 0.07,
-      "prec_top5": 0.0667,
-      "fit_s": 0.0128
+      "roc_auc": 0.5023,
+      "pr_auc": 0.0671,
+      "prec_top1": 0.069,
+      "prec_top5": 0.0703,
+      "fit_s": 0.0125
     },
     "Logistic regression": {
-      "roc_auc": 0.7364,
+      "roc_auc": 0.7419,
       "pr_auc": 0.2277,
-      "prec_top1": 0.485,
-      "prec_top5": 0.2896,
-      "fit_s": 0.0358
+      "prec_top1": 0.4897,
+      "prec_top5": 0.2824,
+      "fit_s": 0.0442
     },
     "Random forest": {
-      "roc_auc": 0.7948,
-      "pr_auc": 0.3111,
-      "prec_top1": 0.615,
-      "prec_top5": 0.3891,
-      "fit_s": 1.6204
+      "roc_auc": 0.7999,
+      "pr_auc": 0.3142,
+      "prec_top1": 0.6552,
+      "prec_top5": 0.3703,
+      "fit_s": 2.047
     },
     "Gradient boosting": {
-      "roc_auc": 0.788,
-      "pr_auc": 0.3056,
-      "prec_top1": 0.62,
-      "prec_top5": 0.3891,
-      "fit_s": 0.2447
+      "roc_auc": 0.7903,
+      "pr_auc": 0.3124,
+      "prec_top1": 0.6759,
+      "prec_top5": 0.3811,
+      "fit_s": 0.508
     }
   },
   "test": {
-    "roc_auc": 0.7961103504234496,
-    "pr_auc": 0.32348029641221393,
-    "test_n": 4029,
-    "test_thieves": 273,
-    "top1_precision": 0.575,
-    "top1_recall": 0.08424908424908426,
-    "top1_k": 40,
-    "top5_precision": 0.43781094527363185,
-    "top5_recall": 0.32234432234432236,
-    "top5_k": 201,
-    "top10_precision": 0.3034825870646766,
-    "top10_recall": 0.4468864468864469,
-    "top10_k": 402
+    "roc_auc": 0.7915810627636011,
+    "pr_auc": 0.29284746744467954,
+    "test_n": 3715,
+    "test_thieves": 244,
+    "top1_precision": 0.5945945945945946,
+    "top1_recall": 0.09016393442622951,
+    "top1_k": 37,
+    "top5_precision": 0.4,
+    "top5_recall": 0.30327868852459017,
+    "top5_k": 185,
+    "top10_precision": 0.2749326145552561,
+    "top10_recall": 0.4180327868852459,
+    "top10_k": 371
   },
   "confusion_top5": [
     [
-      3643,
-      113
+      3360,
+      111
     ],
     [
-      185,
-      88
+      170,
+      74
     ]
   ],
   "importance": {
-    "weekly shape (147 values, via PCA)": 0.09446,
-    "std_kwh": 0.04849,
-    "p90_kwh": 0.01951,
-    "max_kwh": 0.01694,
-    "cv": 0.01564,
-    "sudden_drops": 0.00892,
-    "mean_kwh": 0.00738,
-    "last3_vs_first3": 0.00732,
-    "zero_share": 0.00667,
-    "p10_kwh": 0.00529,
-    "median_kwh": 0.00331,
-    "weekend_ratio": 0.00207,
-    "trend": -0.0039
+    "weekly shape (147 values, via PCA)": 0.07475,
+    "cv": 0.01943,
+    "std_kwh": 0.01653,
+    "max_kwh": 0.01525,
+    "sudden_drops": 0.01049,
+    "p10_kwh": 0.00959,
+    "trend": 0.00946,
+    "p90_kwh": 0.00734,
+    "zero_share": 0.00573,
+    "weekend_ratio": 0.0055,
+    "median_kwh": 0.00505,
+    "last3_vs_first3": 0.00443,
+    "mean_kwh": 0.00167
   },
   "gap_check": {
     "gaps interpolated": {
-      "roc_auc": 0.8072556922664418,
-      "pr_auc": 0.3149330825719959
+      "roc_auc": 0.8089323601438126,
+      "pr_auc": 0.32031040131022803
     },
     "gaps skipped": {
-      "roc_auc": 0.8090822256924873,
-      "pr_auc": 0.3160902906488393
+      "roc_auc": 0.8066981110037172,
+      "pr_auc": 0.31647727858887553
+    }
+  },
+  "strict": {
+    "n": 8206,
+    "thieves": 498,
+    "consumption": {
+      "roc_auc": 0.7803444757555005,
+      "pr_auc": 0.24135990176545943
+    },
+    "missing_pattern": {
+      "roc_auc": 0.7936180186425971,
+      "pr_auc": 0.2624146725967389
+    },
+    "same_size_random_sample": {
+      "roc_auc": 0.7925860493827444,
+      "pr_auc": 0.2782064343712251
+    },
+    "all_kept": {
+      "n": 18574,
+      "thieves": 1222,
+      "consumption": {
+        "roc_auc": 0.8089323601438126,
+        "pr_auc": 0.32031040131022803
+      },
+      "missing_pattern": {
+        "roc_auc": 0.8722917663306047,
+        "pr_auc": 0.40383301837871144
+      }
     }
   }
 }

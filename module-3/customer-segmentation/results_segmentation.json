@@ -1,0 +1,217 @@
+{
+  "n_customers": 200,
+  "female": 112,
+  "features": [
+    "income",
+    "score"
+  ],
+  "k": 5,
+  "k_selection": [
+    {
+      "k": 1,
+      "inertia": 400.0,
+      "silhouette": NaN,
+      "davies_bouldin": NaN,
+      "calinski_harabasz": NaN,
+      "stability": NaN
+    },
+    {
+      "k": 2,
+      "inertia": 269.691,
+      "silhouette": 0.3213,
+      "davies_bouldin": 1.267,
+      "calinski_harabasz": 95.6694,
+      "stability": 0.3791
+    },
+    {
+      "k": 3,
+      "inertia": 157.704,
+      "silhouette": 0.4666,
+      "davies_bouldin": 0.7165,
+      "calinski_harabasz": 151.3351,
+      "stability": 1.0
+    },
+    {
+      "k": 4,
+      "inertia": 108.9213,
+      "silhouette": 0.4939,
+      "davies_bouldin": 0.7096,
+      "calinski_harabasz": 174.5952,
+      "stability": 0.8094
+    },
+    {
+      "k": 5,
+      "inertia": 65.5684,
+      "silhouette": 0.5547,
+      "davies_bouldin": 0.5722,
+      "calinski_harabasz": 248.6493,
+      "stability": 0.9921
+    },
+    {
+      "k": 6,
+      "inertia": 55.0573,
+      "silhouette": 0.5399,
+      "davies_bouldin": 0.6546,
+      "calinski_harabasz": 243.0879,
+      "stability": 0.951
+    },
+    {
+      "k": 7,
+      "inertia": 44.8648,
+      "silhouette": 0.5281,
+      "davies_bouldin": 0.7148,
+      "calinski_harabasz": 254.6212,
+      "stability": 0.9297
+    },
+    {
+      "k": 8,
+      "inertia": 37.1481,
+      "silhouette": 0.4567,
+      "davies_bouldin": 0.7579,
+      "calinski_harabasz": 267.9142,
+      "stability": 0.9251
+    },
+    {
+      "k": 9,
+      "inertia": 32.3923,
+      "silhouette": 0.4571,
+      "davies_bouldin": 0.7632,
+      "calinski_harabasz": 270.9484,
+      "stability": 0.9399
+    },
+    {
+      "k": 10,
+      "inertia": 29.6858,
+      "silhouette": 0.4362,
+      "davies_bouldin": 0.7645,
+      "calinski_harabasz": 263.3497,
+      "stability": 0.7374
+    }
+  ],
+  "final": {
+    "silhouette": 0.5547,
+    "davies_bouldin": 0.5722,
+    "calinski_harabasz": 248.6,
+    "stability": 0.9921
+  },
+  "profiles": [
+    {
+      "segment": "Premium spenders",
+      "customers": 39,
+      "age": 32.7,
+      "income": 86.5,
+      "score": 82.1,
+      "female_pct": 53.8
+    },
+    {
+      "segment": "Careful high earners",
+      "customers": 35,
+      "age": 41.1,
+      "income": 88.2,
+      "score": 17.1,
+      "female_pct": 45.7
+    },
+    {
+      "segment": "Core shoppers",
+      "customers": 81,
+      "age": 42.7,
+      "income": 55.3,
+      "score": 49.5,
+      "female_pct": 59.3
+    },
+    {
+      "segment": "Young enthusiasts",
+      "customers": 22,
+      "age": 25.3,
+      "income": 25.7,
+      "score": 79.4,
+      "female_pct": 59.1
+    },
+    {
+      "segment": "Budget shoppers",
+      "customers": 23,
+      "age": 45.2,
+      "income": 26.3,
+      "score": 20.9,
+      "female_pct": 60.9
+    }
+  ],
+  "ari_ward": 0.942,
+  "gender_chi2": 2.232,
+  "gender_p": 0.6932,
+  "k_with_age": 6,
+  "silhouette_with_age": {
+    "2": 0.3355,
+    "3": 0.3578,
+    "4": 0.404,
+    "5": 0.4166,
+    "6": 0.4274,
+    "7": 0.4172,
+    "8": 0.4087,
+    "9": 0.4201,
+    "10": 0.3973
+  },
+  "ari_with_age": 0.6915,
+  "ari_spark": 1.0,
+  "with_age_profiles": [
+    {
+      "cluster3": 0,
+      "age": 41.9,
+      "income": 88.9,
+      "score": 17.0,
+      "n": 33
+    },
+    {
+      "cluster3": 1,
+      "age": 56.3,
+      "income": 54.3,
+      "score": 49.1,
+      "n": 45
+    },
+    {
+      "cluster3": 2,
+      "age": 25.2,
+      "income": 25.8,
+      "score": 76.9,
+      "n": 24
+    },
+    {
+      "cluster3": 3,
+      "age": 32.7,
+      "income": 86.5,
+      "score": 82.1,
+      "n": 39
+    },
+    {
+      "cluster3": 4,
+      "age": 26.7,
+      "income": 57.6,
+      "score": 47.8,
+      "n": 38
+    },
+    {
+      "cluster3": 5,
+      "age": 45.5,
+      "income": 26.3,
+      "score": 19.4,
+      "n": 21
+    }
+  ],
+  "corr": {
+    "age": {
+      "age": 1.0,
+      "income": -0.012,
+      "score": -0.327
+    },
+    "income": {
+      "age": -0.012,
+      "income": 1.0,
+      "score": 0.01
+    },
+    "score": {
+      "age": -0.327,
+      "income": 0.01,
+      "score": 1.0
+    }
+  }
+}

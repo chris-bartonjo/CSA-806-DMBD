@@ -1,0 +1,1024 @@
+{
+ "checks": {
+  "rows": 1000,
+  "missing_values": 0,
+  "repeated_rows": 0,
+  "repeated_invoices": 0,
+  "cogs_equals_price_x_qty": true,
+  "total_equals_cogs_plus_tax": true,
+  "first_date": "2019-01-01",
+  "last_date": "2019-03-30",
+  "days": 89,
+  "first_hour": 10,
+  "last_hour": 20
+ },
+ "reconcile": {
+  "warehouse_sales": 307587.38,
+  "csv_cogs": 307587.38,
+  "warehouse_with_tax": 322966.75,
+  "csv_total": 322966.75,
+  "warehouse_units": 5510,
+  "csv_units": 5510
+ },
+ "table_rows": {
+  "dim_date": 89,
+  "dim_time": 24,
+  "dim_store": 3,
+  "dim_product": 6,
+  "dim_payment": 3,
+  "fact_sales": 1000
+ },
+ "slice_yangon": [
+  {
+   "category": "Home and lifestyle",
+   "yangon_sales": 21349.71,
+   "yangon_share_pct": 21.1,
+   "all_sales": 51297.06,
+   "all_share_pct": 16.7,
+   "diff_pts": 4.4
+  },
+  {
+   "category": "Sports and travel",
+   "yangon_sales": 18450.19,
+   "yangon_share_pct": 18.2,
+   "all_sales": 52497.93,
+   "all_share_pct": 17.1,
+   "diff_pts": 1.1
+  },
+  {
+   "category": "Electronic accessories",
+   "yangon_sales": 17444.87,
+   "yangon_share_pct": 17.2,
+   "all_sales": 51750.03,
+   "all_share_pct": 16.8,
+   "diff_pts": 0.4
+  },
+  {
+   "category": "Food and beverages",
+   "yangon_sales": 16345.81,
+   "yangon_share_pct": 16.2,
+   "all_sales": 53471.28,
+   "all_share_pct": 17.4,
+   "diff_pts": -1.2
+  },
+  {
+   "category": "Fashion accessories",
+   "yangon_sales": 15554.77,
+   "yangon_share_pct": 15.4,
+   "all_sales": 51719.9,
+   "all_share_pct": 16.8,
+   "diff_pts": -1.4
+  },
+  {
+   "category": "Health and beauty",
+   "yangon_sales": 11997.86,
+   "yangon_share_pct": 11.9,
+   "all_sales": 46851.18,
+   "all_share_pct": 15.2,
+   "diff_pts": -3.3
+  }
+ ],
+ "best_category_by_store": [
+  {
+   "store_location": "Mandalay",
+   "category": "Sports and travel",
+   "sales": 19036.38,
+   "units": 322
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Food and beverages",
+   "sales": 22635.1,
+   "units": 369
+  },
+  {
+   "store_location": "Yangon",
+   "category": "Home and lifestyle",
+   "sales": 21349.71,
+   "units": 371
+  }
+ ],
+ "slice_city_category": [
+  {
+   "store_location": "Mandalay",
+   "category": "Sports and travel",
+   "sales": 19036.38,
+   "units": 322
+  },
+  {
+   "store_location": "Mandalay",
+   "category": "Health and beauty",
+   "sales": 19029.2,
+   "units": 320
+  },
+  {
+   "store_location": "Mandalay",
+   "category": "Home and lifestyle",
+   "sales": 16713.49,
+   "units": 295
+  },
+  {
+   "store_location": "Mandalay",
+   "category": "Electronic accessories",
+   "sales": 16239.47,
+   "units": 316
+  },
+  {
+   "store_location": "Mandalay",
+   "category": "Fashion accessories",
+   "sales": 15631.73,
+   "units": 297
+  },
+  {
+   "store_location": "Mandalay",
+   "category": "Food and beverages",
+   "sales": 14490.37,
+   "units": 270
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Food and beverages",
+   "sales": 22635.1,
+   "units": 369
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Fashion accessories",
+   "sales": 20533.4,
+   "units": 342
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Electronic accessories",
+   "sales": 18065.69,
+   "units": 333
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Health and beauty",
+   "sales": 15824.12,
+   "units": 277
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Sports and travel",
+   "sales": 15011.36,
+   "units": 265
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Home and lifestyle",
+   "sales": 13233.86,
+   "units": 245
+  },
+  {
+   "store_location": "Yangon",
+   "category": "Home and lifestyle",
+   "sales": 21349.71,
+   "units": 371
+  },
+  {
+   "store_location": "Yangon",
+   "category": "Sports and travel",
+   "sales": 18450.19,
+   "units": 333
+  },
+  {
+   "store_location": "Yangon",
+   "category": "Electronic accessories",
+   "sales": 17444.87,
+   "units": 322
+  },
+  {
+   "store_location": "Yangon",
+   "category": "Food and beverages",
+   "sales": 16345.81,
+   "units": 313
+  },
+  {
+   "store_location": "Yangon",
+   "category": "Fashion accessories",
+   "sales": 15554.77,
+   "units": 263
+  },
+  {
+   "store_location": "Yangon",
+   "category": "Health and beauty",
+   "sales": 11997.86,
+   "units": 257
+  }
+ ],
+ "dice": [
+  {
+   "store_location": "Mandalay",
+   "category": "Food and beverages",
+   "month_name": "January",
+   "invoices": 4,
+   "sales": 896.24
+  },
+  {
+   "store_location": "Mandalay",
+   "category": "Food and beverages",
+   "month_name": "February",
+   "invoices": 8,
+   "sales": 1784.43
+  },
+  {
+   "store_location": "Mandalay",
+   "category": "Food and beverages",
+   "month_name": "March",
+   "invoices": 5,
+   "sales": 1113.76
+  },
+  {
+   "store_location": "Mandalay",
+   "category": "Health and beauty",
+   "month_name": "January",
+   "invoices": 3,
+   "sales": 834.88
+  },
+  {
+   "store_location": "Mandalay",
+   "category": "Health and beauty",
+   "month_name": "February",
+   "invoices": 6,
+   "sales": 1418.95
+  },
+  {
+   "store_location": "Mandalay",
+   "category": "Health and beauty",
+   "month_name": "March",
+   "invoices": 10,
+   "sales": 3512.62
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Food and beverages",
+   "month_name": "January",
+   "invoices": 6,
+   "sales": 2384.58
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Food and beverages",
+   "month_name": "February",
+   "invoices": 4,
+   "sales": 1043.02
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Food and beverages",
+   "month_name": "March",
+   "invoices": 10,
+   "sales": 3204.15
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Health and beauty",
+   "month_name": "January",
+   "invoices": 9,
+   "sales": 2256.93
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Health and beauty",
+   "month_name": "February",
+   "invoices": 7,
+   "sales": 1411.07
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "Health and beauty",
+   "month_name": "March",
+   "invoices": 2,
+   "sales": 927.16
+  }
+ ],
+ "drill_month": [
+  {
+   "store_location": "Mandalay",
+   "month": 1,
+   "month_name": "January",
+   "invoices": 111,
+   "sales": 35405.77
+  },
+  {
+   "store_location": "Mandalay",
+   "month": 2,
+   "month_name": "February",
+   "invoices": 109,
+   "sales": 32785.02
+  },
+  {
+   "store_location": "Mandalay",
+   "month": 3,
+   "month_name": "March",
+   "invoices": 112,
+   "sales": 32949.85
+  },
+  {
+   "store_location": "Naypyitaw",
+   "month": 1,
+   "month_name": "January",
+   "invoices": 122,
+   "sales": 38509.22
+  },
+  {
+   "store_location": "Naypyitaw",
+   "month": 2,
+   "month_name": "February",
+   "invoices": 100,
+   "sales": 31366.65
+  },
+  {
+   "store_location": "Naypyitaw",
+   "month": 3,
+   "month_name": "March",
+   "invoices": 106,
+   "sales": 35427.66
+  },
+  {
+   "store_location": "Yangon",
+   "month": 1,
+   "month_name": "January",
+   "invoices": 119,
+   "sales": 36839.17
+  },
+  {
+   "store_location": "Yangon",
+   "month": 2,
+   "month_name": "February",
+   "invoices": 94,
+   "sales": 28438.21
+  },
+  {
+   "store_location": "Yangon",
+   "month": 3,
+   "month_name": "March",
+   "invoices": 127,
+   "sales": 35865.83
+  }
+ ],
+ "busiest_days": [
+  {
+   "date_value": "2019-03-09T00:00:00.000",
+   "sales": 7118.14
+  },
+  {
+   "date_value": "2019-02-07T00:00:00.000",
+   "sales": 6884.01
+  },
+  {
+   "date_value": "2019-03-14T00:00:00.000",
+   "sales": 6871.08
+  },
+  {
+   "date_value": "2019-02-15T00:00:00.000",
+   "sales": 6505.51
+  },
+  {
+   "date_value": "2019-03-02T00:00:00.000",
+   "sales": 6247.91
+  }
+ ],
+ "quietest_days": [
+  {
+   "date_value": "2019-02-13T00:00:00.000",
+   "sales": 889.75
+  },
+  {
+   "date_value": "2019-03-18T00:00:00.000",
+   "sales": 1231.27
+  },
+  {
+   "date_value": "2019-02-21T00:00:00.000",
+   "sales": 1327.37
+  },
+  {
+   "date_value": "2019-03-07T00:00:00.000",
+   "sales": 1369.77
+  },
+  {
+   "date_value": "2019-02-18T00:00:00.000",
+   "sales": 1424.79
+  }
+ ],
+ "best_month": 1,
+ "peak_hour_by_store": [
+  {
+   "store_location": "Mandalay",
+   "hour": 19,
+   "invoices": 50,
+   "sales": 15488.05
+  },
+  {
+   "store_location": "Naypyitaw",
+   "hour": 19,
+   "invoices": 36,
+   "sales": 12482.67
+  },
+  {
+   "store_location": "Yangon",
+   "hour": 11,
+   "invoices": 35,
+   "sales": 10809.42
+  }
+ ],
+ "hour_all": [
+  {
+   "hour": 10,
+   "invoices": 101,
+   "sales": 29925.22
+  },
+  {
+   "hour": 11,
+   "invoices": 90,
+   "sales": 28930.79
+  },
+  {
+   "hour": 12,
+   "invoices": 89,
+   "sales": 24824.65
+  },
+  {
+   "hour": 13,
+   "invoices": 103,
+   "sales": 33069.74
+  },
+  {
+   "hour": 14,
+   "invoices": 83,
+   "sales": 29360.38
+  },
+  {
+   "hour": 15,
+   "invoices": 102,
+   "sales": 29694.77
+  },
+  {
+   "hour": 16,
+   "invoices": 77,
+   "sales": 24025.07
+  },
+  {
+   "hour": 17,
+   "invoices": 74,
+   "sales": 23281.16
+  },
+  {
+   "hour": 18,
+   "invoices": 93,
+   "sales": 24790.8
+  },
+  {
+   "hour": 19,
+   "invoices": 113,
+   "sales": 37809.06
+  },
+  {
+   "hour": 20,
+   "invoices": 75,
+   "sales": 21875.74
+  }
+ ],
+ "weekday_all": [
+  {
+   "dow": 1,
+   "day_of_week": "Monday",
+   "sales": 36094.36
+  },
+  {
+   "dow": 2,
+   "day_of_week": "Tuesday",
+   "sales": 49030.71
+  },
+  {
+   "dow": 3,
+   "day_of_week": "Wednesday",
+   "sales": 41648.7
+  },
+  {
+   "dow": 4,
+   "day_of_week": "Thursday",
+   "sales": 43189.76
+  },
+  {
+   "dow": 5,
+   "day_of_week": "Friday",
+   "sales": 41834.61
+  },
+  {
+   "dow": 6,
+   "day_of_week": "Saturday",
+   "sales": 53448.39
+  },
+  {
+   "dow": 7,
+   "day_of_week": "Sunday",
+   "sales": 42340.85
+  }
+ ],
+ "weekday_by_store": [
+  {
+   "store_location": "Mandalay",
+   "dow": 1,
+   "day_of_week": "Monday",
+   "invoices": 39,
+   "sales": 12128.29
+  },
+  {
+   "store_location": "Mandalay",
+   "dow": 2,
+   "day_of_week": "Tuesday",
+   "invoices": 53,
+   "sales": 17961.18
+  },
+  {
+   "store_location": "Mandalay",
+   "dow": 3,
+   "day_of_week": "Wednesday",
+   "invoices": 50,
+   "sales": 12102.47
+  },
+  {
+   "store_location": "Mandalay",
+   "dow": 4,
+   "day_of_week": "Thursday",
+   "invoices": 44,
+   "sales": 15027.26
+  },
+  {
+   "store_location": "Mandalay",
+   "dow": 5,
+   "day_of_week": "Friday",
+   "invoices": 51,
+   "sales": 13731.2
+  },
+  {
+   "store_location": "Mandalay",
+   "dow": 6,
+   "day_of_week": "Saturday",
+   "invoices": 60,
+   "sales": 20270.88
+  },
+  {
+   "store_location": "Mandalay",
+   "dow": 7,
+   "day_of_week": "Sunday",
+   "invoices": 35,
+   "sales": 9919.36
+  },
+  {
+   "store_location": "Naypyitaw",
+   "dow": 1,
+   "day_of_week": "Monday",
+   "invoices": 38,
+   "sales": 10405.06
+  },
+  {
+   "store_location": "Naypyitaw",
+   "dow": 2,
+   "day_of_week": "Tuesday",
+   "invoices": 54,
+   "sales": 16826.47
+  },
+  {
+   "store_location": "Naypyitaw",
+   "dow": 3,
+   "day_of_week": "Wednesday",
+   "invoices": 50,
+   "sales": 16910.3
+  },
+  {
+   "store_location": "Naypyitaw",
+   "dow": 4,
+   "day_of_week": "Thursday",
+   "invoices": 48,
+   "sales": 13474.62
+  },
+  {
+   "store_location": "Naypyitaw",
+   "dow": 5,
+   "day_of_week": "Friday",
+   "invoices": 38,
+   "sales": 14252.11
+  },
+  {
+   "store_location": "Naypyitaw",
+   "dow": 6,
+   "day_of_week": "Saturday",
+   "invoices": 54,
+   "sales": 17210.45
+  },
+  {
+   "store_location": "Naypyitaw",
+   "dow": 7,
+   "day_of_week": "Sunday",
+   "invoices": 46,
+   "sales": 16224.52
+  },
+  {
+   "store_location": "Yangon",
+   "dow": 1,
+   "day_of_week": "Monday",
+   "invoices": 48,
+   "sales": 13561.01
+  },
+  {
+   "store_location": "Yangon",
+   "dow": 2,
+   "day_of_week": "Tuesday",
+   "invoices": 51,
+   "sales": 14243.06
+  },
+  {
+   "store_location": "Yangon",
+   "dow": 3,
+   "day_of_week": "Wednesday",
+   "invoices": 43,
+   "sales": 12635.93
+  },
+  {
+   "store_location": "Yangon",
+   "dow": 4,
+   "day_of_week": "Thursday",
+   "invoices": 46,
+   "sales": 14687.88
+  },
+  {
+   "store_location": "Yangon",
+   "dow": 5,
+   "day_of_week": "Friday",
+   "invoices": 50,
+   "sales": 13851.3
+  },
+  {
+   "store_location": "Yangon",
+   "dow": 6,
+   "day_of_week": "Saturday",
+   "invoices": 50,
+   "sales": 15967.06
+  },
+  {
+   "store_location": "Yangon",
+   "dow": 7,
+   "day_of_week": "Sunday",
+   "invoices": 52,
+   "sales": 16196.97
+  }
+ ],
+ "rollup": [
+  {
+   "year": 2019.0,
+   "quarter": 1.0,
+   "month": 1.0,
+   "sales": 110754.16,
+   "invoices": 352
+  },
+  {
+   "year": 2019.0,
+   "quarter": 1.0,
+   "month": 2.0,
+   "sales": 92589.88,
+   "invoices": 303
+  },
+  {
+   "year": 2019.0,
+   "quarter": 1.0,
+   "month": 3.0,
+   "sales": 104243.34,
+   "invoices": 345
+  },
+  {
+   "year": 2019.0,
+   "quarter": 1.0,
+   "month": null,
+   "sales": 307587.38,
+   "invoices": 1000
+  },
+  {
+   "year": 2019.0,
+   "quarter": null,
+   "month": null,
+   "sales": 307587.38,
+   "invoices": 1000
+  },
+  {
+   "year": null,
+   "quarter": null,
+   "month": null,
+   "sales": 307587.38,
+   "invoices": 1000
+  }
+ ],
+ "months": [
+  {
+   "year": 2019.0,
+   "quarter": 1.0,
+   "month": 1.0,
+   "sales": 110754.16,
+   "invoices": 352,
+   "change_pct": null
+  },
+  {
+   "year": 2019.0,
+   "quarter": 1.0,
+   "month": 2.0,
+   "sales": 92589.88,
+   "invoices": 303,
+   "change_pct": -16.4
+  },
+  {
+   "year": 2019.0,
+   "quarter": 1.0,
+   "month": 3.0,
+   "sales": 104243.34,
+   "invoices": 345,
+   "change_pct": 12.6
+  }
+ ],
+ "rollup_week": [
+  {
+   "week_of_year": 1,
+   "first_day": "2019-01-01T00:00:00.000",
+   "last_day": "2019-01-06T00:00:00.000",
+   "days": 6,
+   "sales": 16707.99
+  },
+  {
+   "week_of_year": 2,
+   "first_day": "2019-01-07T00:00:00.000",
+   "last_day": "2019-01-13T00:00:00.000",
+   "days": 7,
+   "sales": 23296.38
+  },
+  {
+   "week_of_year": 3,
+   "first_day": "2019-01-14T00:00:00.000",
+   "last_day": "2019-01-20T00:00:00.000",
+   "days": 7,
+   "sales": 27327.01
+  },
+  {
+   "week_of_year": 4,
+   "first_day": "2019-01-21T00:00:00.000",
+   "last_day": "2019-01-27T00:00:00.000",
+   "days": 7,
+   "sales": 27892.27
+  },
+  {
+   "week_of_year": 5,
+   "first_day": "2019-01-28T00:00:00.000",
+   "last_day": "2019-02-03T00:00:00.000",
+   "days": 7,
+   "sales": 27009.95
+  },
+  {
+   "week_of_year": 6,
+   "first_day": "2019-02-04T00:00:00.000",
+   "last_day": "2019-02-10T00:00:00.000",
+   "days": 7,
+   "sales": 25811.27
+  },
+  {
+   "week_of_year": 7,
+   "first_day": "2019-02-11T00:00:00.000",
+   "last_day": "2019-02-17T00:00:00.000",
+   "days": 7,
+   "sales": 24346.28
+  },
+  {
+   "week_of_year": 8,
+   "first_day": "2019-02-18T00:00:00.000",
+   "last_day": "2019-02-24T00:00:00.000",
+   "days": 7,
+   "sales": 16503.49
+  },
+  {
+   "week_of_year": 9,
+   "first_day": "2019-02-25T00:00:00.000",
+   "last_day": "2019-03-03T00:00:00.000",
+   "days": 7,
+   "sales": 27828.3
+  },
+  {
+   "week_of_year": 10,
+   "first_day": "2019-03-04T00:00:00.000",
+   "last_day": "2019-03-10T00:00:00.000",
+   "days": 7,
+   "sales": 27065.56
+  },
+  {
+   "week_of_year": 11,
+   "first_day": "2019-03-11T00:00:00.000",
+   "last_day": "2019-03-17T00:00:00.000",
+   "days": 7,
+   "sales": 22847.83
+  },
+  {
+   "week_of_year": 12,
+   "first_day": "2019-03-18T00:00:00.000",
+   "last_day": "2019-03-24T00:00:00.000",
+   "days": 7,
+   "sales": 23924.38
+  },
+  {
+   "week_of_year": 13,
+   "first_day": "2019-03-25T00:00:00.000",
+   "last_day": "2019-03-30T00:00:00.000",
+   "days": 6,
+   "sales": 17026.67
+  }
+ ],
+ "pivot_store_month": [
+  {
+   "store_location": "Mandalay",
+   "january": 35405.77,
+   "february": 32785.02,
+   "march": 32949.85,
+   "total": 101140.64
+  },
+  {
+   "store_location": "Naypyitaw",
+   "january": 38509.22,
+   "february": 31366.65,
+   "march": 35427.66,
+   "total": 105303.53
+  },
+  {
+   "store_location": "Yangon",
+   "january": 36839.17,
+   "february": 28438.21,
+   "march": 35865.83,
+   "total": 101143.21
+  }
+ ],
+ "pivot_category_month": [
+  {
+   "category": "Food and beverages",
+   "january": 18638.6,
+   "february": 19047.96,
+   "march": 15784.72,
+   "total": 53471.28
+  },
+  {
+   "category": "Sports and travel",
+   "january": 20635.26,
+   "february": 13152.01,
+   "march": 18710.66,
+   "total": 52497.93
+  },
+  {
+   "category": "Electronic accessories",
+   "january": 17934.56,
+   "february": 16536.1,
+   "march": 17279.37,
+   "total": 51750.03
+  },
+  {
+   "category": "Fashion accessories",
+   "january": 18423.92,
+   "february": 18104.63,
+   "march": 15191.35,
+   "total": 51719.9
+  },
+  {
+   "category": "Home and lifestyle",
+   "january": 19518.8,
+   "february": 11842.27,
+   "march": 19935.99,
+   "total": 51297.06
+  },
+  {
+   "category": "Health and beauty",
+   "january": 15603.02,
+   "february": 13906.91,
+   "march": 17341.25,
+   "total": 46851.18
+  }
+ ],
+ "best_category_by_month": {
+  "january": "Sports and travel",
+  "february": "Food and beverages",
+  "march": "Home and lifestyle"
+ },
+ "cube_subtotals": [
+  {
+   "store_location": "Mandalay",
+   "category": "All categories",
+   "sales": 101140.64,
+   "level": 1
+  },
+  {
+   "store_location": "Naypyitaw",
+   "category": "All categories",
+   "sales": 105303.53,
+   "level": 1
+  },
+  {
+   "store_location": "Yangon",
+   "category": "All categories",
+   "sales": 101143.21,
+   "level": 1
+  },
+  {
+   "store_location": "All stores",
+   "category": "Electronic accessories",
+   "sales": 51750.03,
+   "level": 2
+  },
+  {
+   "store_location": "All stores",
+   "category": "Fashion accessories",
+   "sales": 51719.9,
+   "level": 2
+  },
+  {
+   "store_location": "All stores",
+   "category": "Food and beverages",
+   "sales": 53471.28,
+   "level": 2
+  },
+  {
+   "store_location": "All stores",
+   "category": "Health and beauty",
+   "sales": 46851.18,
+   "level": 2
+  },
+  {
+   "store_location": "All stores",
+   "category": "Home and lifestyle",
+   "sales": 51297.06,
+   "level": 2
+  },
+  {
+   "store_location": "All stores",
+   "category": "Sports and travel",
+   "sales": 52497.93,
+   "level": 2
+  },
+  {
+   "store_location": "All stores",
+   "category": "All categories",
+   "sales": 307587.38,
+   "level": 3
+  }
+ ],
+ "payment_store": [
+  {
+   "store_location": "Mandalay",
+   "payment_method": "Cash",
+   "invoices": 110,
+   "sales": 33656.63
+  },
+  {
+   "store_location": "Mandalay",
+   "payment_method": "Credit card",
+   "invoices": 109,
+   "sales": 35566.53
+  },
+  {
+   "store_location": "Mandalay",
+   "payment_method": "Ewallet",
+   "invoices": 113,
+   "sales": 31917.48
+  },
+  {
+   "store_location": "Naypyitaw",
+   "payment_method": "Cash",
+   "invoices": 124,
+   "sales": 41034.15
+  },
+  {
+   "store_location": "Naypyitaw",
+   "payment_method": "Credit card",
+   "invoices": 98,
+   "sales": 28883.3
+  },
+  {
+   "store_location": "Naypyitaw",
+   "payment_method": "Ewallet",
+   "invoices": 106,
+   "sales": 35386.08
+  },
+  {
+   "store_location": "Yangon",
+   "payment_method": "Cash",
+   "invoices": 110,
+   "sales": 32172.62
+  },
+  {
+   "store_location": "Yangon",
+   "payment_method": "Credit card",
+   "invoices": 104,
+   "sales": 31518.81
+  },
+  {
+   "store_location": "Yangon",
+   "payment_method": "Ewallet",
+   "invoices": 126,
+   "sales": 37451.78
+  }
+ ],
+ "pivot_tables_match_sql": true
+}

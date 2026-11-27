@@ -1,0 +1,6 @@
+numpy==2.4.6
+pandas==3.1.1
+matplotlib==3.10.9
+psycopg[binary]==3.3.9
+kagglehub==1.0.3
+ipykernel==7.2.0

@@ -1,0 +1,21 @@
+# Local PostgreSQL 17 for the OLAP mini project.
+# Test credentials for this local database only.
+services:
+  db:
+    image: postgres:17
+    container_name: olap-postgres
+    environment:
+      POSTGRES_DB: supermarket_dw
+      POSTGRES_USER: dw
+      POSTGRES_PASSWORD: dw_local_test
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dw -d supermarket_dw"]
+      interval: 3s
+      retries: 20
+
+volumes:
+  pgdata:

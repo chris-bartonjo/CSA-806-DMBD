@@ -1,0 +1,49 @@
+erDiagram
+    fact_sales }o--|| dim_date : "date_key"
+    fact_sales }o--|| dim_time : "time_key"
+    fact_sales }o--|| dim_store : "store_id"
+    fact_sales }o--|| dim_product : "product_id"
+    fact_sales }o--|| dim_payment : "payment_method_id"
+    fact_sales {
+        int sales_id PK
+        text invoice_id
+        int date_key FK
+        int time_key FK
+        int store_id FK
+        int product_id FK
+        int payment_method_id FK
+        int quantity
+        numeric unit_price
+        numeric total_sales
+        numeric tax_amount
+    }
+    dim_date {
+        int date_key PK
+        date date_value
+        int year
+        int quarter
+        int month
+        text month_name
+        int day
+        text day_of_week
+        int week_of_year
+    }
+    dim_time {
+        int time_key PK
+        int hour
+        text day_part
+    }
+    dim_store {
+        int store_id PK
+        text branch_code
+        text store_location
+        text region
+    }
+    dim_product {
+        int product_id PK
+        text category
+    }
+    dim_payment {
+        int payment_method_id PK
+        text payment_method_type
+    }
